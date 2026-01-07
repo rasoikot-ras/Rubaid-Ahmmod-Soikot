@@ -4,10 +4,20 @@
     box-sizing: border-box;
 }
 
-/* Shared Style Google Fonts */
+/* google font open sans */
+
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+}
+
+/* header style */
+
+header {
+    padding-top: 50px;
+    background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
+    background-position: 23px 38px , bottom right;
+    background-repeat: no-repeat;
 }
 
 .logo h2 {
@@ -19,28 +29,14 @@
     color: #FD6E0A;
 }
 
-/* main style */
-/* duita chobi ba duita background img dite hole ektar pashe arekta just coma diye deo */
-
-/* header style */
-
-header {
-    background-color: #FFF8F3;
-    background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
-    background-position: 23px 38px, bottom right;
-    padding-top: 50px;
-    background-repeat: no-repeat;
-}
-
 /* navigation style */
 
 nav {
     width: 71%;
     max-width: 1140px;
-    /* border: 1px solid black; */
     margin: 0px auto;
-    display: flex;
     justify-content: space-between;
+    display: flex;
     align-items: center;
 }
 
@@ -51,7 +47,7 @@ nav .menu {
     align-items: center;
 }
 
-nav .menu a{
+nav .menu a {
     font-size: 20px;
     color: #474747;
     text-decoration: none;
@@ -61,10 +57,10 @@ nav .menu a{
 
 .btn {
     background-color: #FD6E0A;
+    color: white;
+    padding: 18px 35px;
     border: none;
     border-radius: 5px;
-    padding: 18px 35px;
-    color: white;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -85,7 +81,6 @@ nav .menu a{
 /* banner section style */
 
 #banner {
-    /* border: 1px solid black; */
     margin: 47px 38px 0 230px;
     display: flex;
     justify-content: space-between;
@@ -119,15 +114,13 @@ nav .menu a{
 
 #banner .banner-image img {
     max-width: 585px;
-    vertical-align: middle;
-    
+    vertical-align: middle; 
 }
 
 /* about section style */
 
 #about {
     padding-top: 130px;
-
 }
 
 #about .about-container {
@@ -143,21 +136,20 @@ nav .menu a{
     max-width: 827px;
     text-align: center;
     margin: 0 auto;
-
 }
 
 .section-heading h2 {
     font-size: 35px;
-     /*font-weight: bold;*/
+    /*font-weight: 900;*/
     margin-bottom: 30px;
     color: #181818;
 }
 
 .section-heading p {
     font-size: 18px;
-    margin-bottom: 30px;
     line-height: 30px;
     color: #757575;
+    margin-bottom: 30px;
 }
 
 #about .about-container .about-info {
@@ -165,21 +157,23 @@ nav .menu a{
     justify-content: space-around;
 }
 
-.about-info .info-card p{
+.about-info .info-card p {
     font-size: 20px;
-    margin-bottom: 30px;
     line-height: 30px;
     color: #757575;
+    margin-bottom: 30px;
 }
 
 .about-info .info-card h4 {
    font-size: 20px;
+   line-height: 30px;
+   color: #474747;
 }
 
-/* skills section style */
+    /* skills section style */
 
-#skills {
-    padding-top: 130px; 
+#skills{
+    padding-top: 130px;
 }
 
 #skills .skills-container {
@@ -196,13 +190,15 @@ nav .menu a{
 .skill-box .skill-card {
     padding: 30px;
     max-width: 267px;
-    box-shadow: 0 6px 50px 0 #00000027;    
+    box-shadow: 0 6px 50px 0 #00000027;
 }
 
 .skill-card img {
-    max-width: 44px;
+    width: 44px;
+    /* height: 44px; */
     margin-bottom: 30px;
 }
+
 .skill-card h3 {
     font-size: 20px;
     color: #181818;
@@ -226,7 +222,7 @@ nav .menu a{
     max-width: 1140px;
     margin: 113px auto 0;
     display: flex;
-    gap: 24px;
+    gap: 19px;
 }
 
 .resume-container .section-title {
@@ -269,55 +265,44 @@ nav .menu a{
     margin-top: 50px;
 }
 
-/* footer section style */
-
 footer {
-    margin-top: 130px;
     background-color: #FFF8F3;
+    margin-top: 113px;
     padding: 130px 0;
 }
 
 footer .footer-container {
+    display: flex;
     width: 71%;
     max-width: 1140px;
     margin: 0 auto;
-    display: flex;
-    gap: 116px;
-
+    gap: 117px;
 }
 
 .footer-container .social {
     max-width: 562px;
 }
 
-.footer-container .social p {
-    color: #474747;
-    line-height: 28px;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-
-.footer-container .icons a {
-    margin-right: 24px;
-
-}
-
 .footer-container h2 {
     font-size: 35px;
+    font-weight: bold;
     color: #181818;
     margin-bottom: 20px;
 }
 
-.footer-container form input[type="text"]{
-    width: 461px;
-    padding: 18px 31px;
-    margin-bottom: 24px;
-    border: none;
-    border-radius: 5px;
-    color-scheme: #757575;
+.footer-container p {
+    line-height: 28px;
+    font-size: 16px;
+    color: #474747;
+    margin-bottom: 30px;
 }
 
-.footer-container form textarea {
+.footer-container .icons a {
+    width: 24px;
+    margin-right: 24px;
+}
+
+.footer-container form input[type="text"] {
     width: 461px;
     padding: 18px 31px;
     margin-bottom: 24px;
@@ -325,4 +310,40 @@ footer .footer-container {
     border-radius: 5px;
     color: #757575;
 }
+
+.footer-container form input[type="email"] {
+    width: 461px;
+    padding: 18px 31px;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 5px;
+    color: #757575;
+}
+
+.footer-container form textarea {
+    width: 461px;
+    padding: 18px 31px;
+    margin-bottom: 24px;
+   /* border: none;*/
+    border-radius: 5px;
+    color: #757575;
+}
+
+.btn:hover {
+    color: black;
+    background-color: wheat;
+}
+
+.btn-c:hover {
+    color: #757575;
+    background-color: skyblue;
+}
+
+a:hover {
+    background-color: gray;
+}
+
+/* a:visited {
+  color: purple;
+} */
 
