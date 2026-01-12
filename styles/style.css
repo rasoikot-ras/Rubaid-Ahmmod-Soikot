@@ -59,6 +59,12 @@ nav .menu a{
 
 /* button style */
 
+.bnt-group{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
 .btn {
     background-color: #FD6E0A;
     border: none;
@@ -79,7 +85,7 @@ nav .menu a{
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    margin: 0 0 0 30px;
+    /* margin: 0 0 0 30px; */
 }
 
 /* banner section style */
@@ -326,3 +332,84 @@ footer .footer-container {
     color: #757575;
 }
 
+.hide{
+    display: none !important;
+}
+
+@media screen and (max-width:576px) {
+    #skills .skills-container , #about .about-container , footer .footer-container{
+        width: 95%;
+    }
+    #about .about-container {
+        padding: 20px;
+    }
+    #about .about-container .about-info{
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .section-heading h2 {
+        font-size: 30px;
+    }
+    #skills .skills-container .skill-box {
+        flex-direction: column;
+    }
+    .skill-box .skill-card{
+        max-width: 100%;
+    }
+
+    #about,
+    #skills,
+    #resume {
+        padding: 60px;
+    }
+    footer .footer-container {
+        flex-direction: column;
+    }
+    .footer-container form input[type="text"] {
+        width: 100%;
+    }
+    
+    .footer-container form textarea {
+        width: 100%;
+    }
+
+    #resume .resume-container {
+        width: 95%;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    .resume-card{
+        margin-right: 10px;
+    }
+    nav{
+        width: 95%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #banner{
+        margin: 20px;
+        gap: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+    #banner .banner-image img{
+        width: 100%;
+    }
+    /* #banner .banner-content{
+
+    } */
+     #banner .banner-content{
+        width: 95%;
+     }
+    #banner .banner-content h1{
+        font-size: 44px;
+    }
+    .bnt-group{
+        justify-content: center;
+    }
+}
